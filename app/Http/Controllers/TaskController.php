@@ -28,7 +28,7 @@ class TaskController extends Controller
 
         Task::create($request->all()); // Create a new task in the database
 
-        return redirect('/tasks')->with('success', 'Task created successfully!');
+        return redirect('/')->with('success', 'Task created successfully!');
     }
 
     public function show(Task $task)
